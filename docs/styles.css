@@ -1,14 +1,25 @@
 body {
-  background-color: rgb(101, 223, 101);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('sources/textur_gruen_rosa.jpg');
+  background-repeat: repeat;
+  background-size: 500px 500px; /* Größe der Grafik anpassen */
 }
-h1 {
-  color: rgb(43, 43, 43);
-  text-align: center;
+
+.video-container {
+  width: 80%;
+  max-width: 800px; /* Maximale Breite des Videos */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: Hintergrund des Video-Containers */
+  border-radius: 10px; /* Optional: Abgerundete Ecken */
 }
-p {
-  color: rgb(255, 0, 0);
-}
+
 video {
-  width: 50%;
+  width: 100%;
   height: auto;
+  display: block;
 }
