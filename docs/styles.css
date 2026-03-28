@@ -10,16 +10,43 @@ body {
   background-size: 500px 500px; /* Größe der Grafik anpassen */
 }
 
-.video-container {
-  width: 80%;
-  max-width: 1400px; /* Maximale Breite des Videos */
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Optional: Hintergrund des Video-Containers */
-  border-radius: 10px; /* Optional: Abgerundete Ecken */
+/* Container für Video und Text */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zentriert Video und Text horizontal */
+  max-width: 1440px; /* Maximale Breite (entspricht der Video-Breite) */
 }
 
+/* Container für das Video */
+.video-container {
+  width: auto;
+  height: 800px; /* Feste Höhe (kannst du anpassen) */
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+/* Video-Stile */
 video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: contain;
+}
+
+/* Container für den Text */
+.text-container {
+  width: 100%; /* Text ist so breit wie das Video */
+  /* padding: 10px; */
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  /* border-radius: 5px; */
+  text-align: right; /* Text ist linksbündig */
+}
+
+/* Text-Stile */
+.text-container p {
+  margin: 5px;
+  font-size: 15px;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
 }
